@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.SavingsAccountController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Savings Account" style="-fx-font-size: 24px;"/>
+    <Label fx:id="balanceLabel" style="-fx-font-size: 18px;"/>
+    <TextField fx:id="amountField" promptText="Enter amount"/>
+    <HBox alignment="CENTER" spacing="20">
+        <Button text="Withdraw" onAction="#handleWithdraw"/>
+        <Button text="Deposit" onAction="#handleDeposit"/>
+    </HBox>
+    <Button text="Back to Main Menu" onAction="#handleBack"/>
+</VBox> 
